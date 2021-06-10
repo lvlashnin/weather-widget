@@ -45,7 +45,11 @@
         flex-direction: column;
         justify-content: center;
         padding-left: 20px;
-     }
+
+        &--night {
+            color: white;
+        }
+    }
 
     &__location {
         color: white;
@@ -54,11 +58,10 @@
     }
 
     &__weekday,
-    &__date {
+    &__date {        
         font-size: 18px;
-        font-weight: 500;
-    }    
-
+        font-weight: 500;        
+    }
 }
 
 .weather-widget--morning {
