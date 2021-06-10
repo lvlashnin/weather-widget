@@ -1,0 +1,78 @@
+@import 'fonts';
+@import 'settings';
+
+.container {
+    padding-top: 100px;
+}
+
+.weather-widget {
+    height: 300px;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        width: 415px;
+        height: 115px;
+        border: 1px solid white;
+        border-radius: 6px;
+    }
+
+    &__icon {
+        width: 140px;
+        height: 115px;
+        display: flex;
+    }
+
+    &__temperature {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 110px;
+        height: 115px;
+        font-size: 64px;
+        font-weight: 600;
+        color: white;
+    }
+
+    &__description {
+        width: 165px;
+        height: 115px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+     }
+
+    &__location {
+        color: white;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    &__weekday,
+    &__date {
+        font-size: 18px;
+        font-weight: 500;
+    }    
+
+}
+
+.weather-widget--morning {
+    background-image: url('../img/bg-morning.png');
+}
+
+.weather-widget--sunset {
+    background-image: url('../img/bg-sunset.png');
+}
+
+.weather-widget--rain {
+    background-image: url('../img/bg-rain.png');
+}
+
+.weather-widget--night {
+    background-image: url('../img/bg-night.png');
+}
